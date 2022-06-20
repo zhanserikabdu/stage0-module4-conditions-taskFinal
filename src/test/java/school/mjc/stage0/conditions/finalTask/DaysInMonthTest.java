@@ -24,10 +24,19 @@ class DaysInMonthTest extends BaseIOTest {
     }
 
     @Test
-    void printDaysFebNonLeapCentury() {
+    void printDaysFebLeapWhen2000() {
         DaysInMonth daysInMonth = new DaysInMonth();
 
         daysInMonth.printDays(2000, 2);
+
+        assertOutEquals("29\n");
+    }
+
+    @Test
+    void printDaysFebLeapWhen20thCentury() {
+        DaysInMonth daysInMonth = new DaysInMonth();
+
+        daysInMonth.printDays(1900, 2);
 
         assertOutEquals("28\n");
     }
