@@ -6,8 +6,6 @@ public class DaysInMonth {
             System.out.println(28);
         } else if (month == 6) {
             System.out.println(30);
-        } else if(year == 2000){
-            System.out.println(29);
         } else {
             System.out.println("invalid date");
         }
